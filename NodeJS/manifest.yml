@@ -1,0 +1,11 @@
+applications:
+- services:
+  - Text To Speech-um
+  disk_quota: 1024M
+  host: wtvr
+  name: wtvr
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 256M
+  command: node index.js

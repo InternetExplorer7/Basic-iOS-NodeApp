@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NodeApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an option below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yj-Qo-NZU">
+                                <rect key="frame" x="213" y="92" width="174" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bEq-y3-q4N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6F-dk-C6K">
+                                <rect key="frame" x="216" y="150" width="169" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Restaurants - Open Now"/>
+                                <connections>
+                                    <action selector="Rest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T1x-ll-DHn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EA9-d3-hCT">
+                                <rect key="frame" x="281" y="188" width="39" height="30"/>
+                                <animations/>
+                                <state key="normal" title="ATMs"/>
+                                <connections>
+                                    <action selector="atm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1N-1m-jjl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-Hf-fn8">
+                                <rect key="frame" x="248" y="226" width="105" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Shopping Malls"/>
+                                <connections>
+                                    <action selector="shoppingmall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epd-Pu-qWz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbx-ct-PJG">
+                                <rect key="frame" x="258" y="262" width="86" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Bus Stations"/>
+                                <connections>
+                                    <action selector="busstation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUa-C8-tuc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bu0-97-aTK">
+                                <rect key="frame" x="258" y="338" width="87" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Gas Stations"/>
+                                <connections>
+                                    <action selector="gasstation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9F-AX-yRB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9l-Pf-Ay3">
+                                <rect key="frame" x="248" y="300" width="106" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Clothing Stores"/>
+                                <connections>
+                                    <action selector="clothingstore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQ7-AZ-1w1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Yj-Qo-NZU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="0ZE-CM-pGs"/>
+                            <constraint firstItem="EA9-d3-hCT" firstAttribute="top" secondItem="M6F-dk-C6K" secondAttribute="bottom" constant="8" symbolic="YES" id="PIG-bK-oMk"/>
+                            <constraint firstItem="EA9-d3-hCT" firstAttribute="centerX" secondItem="ywe-Hf-fn8" secondAttribute="centerX" id="RBT-4S-Gms"/>
+                            <constraint firstItem="P9l-Pf-Ay3" firstAttribute="top" secondItem="nbx-ct-PJG" secondAttribute="bottom" constant="8" symbolic="YES" id="See-Zl-1N5"/>
+                            <constraint firstItem="nbx-ct-PJG" firstAttribute="top" secondItem="ywe-Hf-fn8" secondAttribute="bottom" constant="6" id="U9z-4k-lxn"/>
+                            <constraint firstItem="Bu0-97-aTK" firstAttribute="top" secondItem="P9l-Pf-Ay3" secondAttribute="bottom" constant="8" symbolic="YES" id="Zqp-MO-4sF"/>
+                            <constraint firstItem="M6F-dk-C6K" firstAttribute="centerX" secondItem="3Yj-Qo-NZU" secondAttribute="centerX" id="eyG-zr-tYc"/>
+                            <constraint firstItem="M6F-dk-C6K" firstAttribute="centerX" secondItem="EA9-d3-hCT" secondAttribute="centerX" id="gIW-uC-jBe"/>
+                            <constraint firstItem="nbx-ct-PJG" firstAttribute="leading" secondItem="Bu0-97-aTK" secondAttribute="leading" id="jdE-Qu-fUj"/>
+                            <constraint firstItem="P9l-Pf-Ay3" firstAttribute="leading" secondItem="ywe-Hf-fn8" secondAttribute="leading" id="jsk-x0-wPK"/>
+                            <constraint firstItem="ywe-Hf-fn8" firstAttribute="centerX" secondItem="nbx-ct-PJG" secondAttribute="centerX" id="mOo-BY-JSx"/>
+                            <constraint firstItem="M6F-dk-C6K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJ8-2G-x4p"/>
+                            <constraint firstItem="M6F-dk-C6K" firstAttribute="top" secondItem="3Yj-Qo-NZU" secondAttribute="bottom" constant="37" id="xXz-4l-mQk"/>
+                            <constraint firstItem="ywe-Hf-fn8" firstAttribute="top" secondItem="EA9-d3-hCT" secondAttribute="bottom" constant="8" symbolic="YES" id="yMW-4p-Ruy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="361"/>
+        </scene>
+    </scenes>
+</document>
